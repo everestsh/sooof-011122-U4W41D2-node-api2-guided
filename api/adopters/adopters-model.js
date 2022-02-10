@@ -11,6 +11,7 @@ module.exports = {
   findDogs,
 };
 
+//http://localhost:9000/api/adopters?limit=5&page=2
 function find(query) {
   const { page = 1, limit = 2, sortby = 'id', sortdir = 'asc' } = query;
   const offset = limit * (page - 1);
